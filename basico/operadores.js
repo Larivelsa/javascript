@@ -38,12 +38,12 @@ console.log(null + undefined); // NaN
 
 /* incrementos e decrementos */
 var depois = 10;
-console.log("incrementei: "+depois++);
-console.log("incrementado depois vale: " + depois);
+console.log("Incrementei: "+depois++);
+console.log("Incrementado depois vale: " + depois);
 
 var antes = 10;
-console.log("sem incremeto inicial: "+antes);
-console.log("incrementei e ja chega incrementado valendo: "+ ++antes);
+console.log("Sem incremeto inicial: "+antes);
+console.log("Incrementei e ja chega incrementado valendo: "+ ++antes);
 
 /* operadores de igualdade/desigualdade estrita */
 console.log("21"==21); //operador de igualdade, converte em valor numerico parseInt("21")
@@ -94,13 +94,3 @@ console.log(numeroso);
 var newton=null;
 var newton = newton + 3;
 console.log(newton);
-
-
-var nome = "Caio";
-var sobrenome = "Teixeira";
-var nome_completo = nome + " " + sobrenome;
-console.log("Nome completo: " + nome_completo);
-
-var numero = 10;
-numero++;
-console.log(numero);

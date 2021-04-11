@@ -1,9 +1,9 @@
 /*
-variaveis com valor vazio -> atribuir null, pois undefined gera erros
+tipo null
+variaveis que iniciam vazias: atribuir null, pois undefined gera erros de calculo
 */
 
-var nuull=null;
-console.log(nuull);
-//console.log(nuull.length);
-//console.log(nuull.toFixed(2)); toFixed serve para definir numero de casas decimais
-console.log(nuull+1); 
+let vazia=null;
+console.log("Valor da variavel 'vazia': "+vazia);
+//console.log("Tamanho da variavel 'vazia': "+vazia.length);/*gera um TypeError: Cannot read property 'length' of null*/
+console.log("Valor da variavel 'vazia' + 1: "+vazia+1); 
