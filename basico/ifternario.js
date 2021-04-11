@@ -2,7 +2,7 @@
 estrutura:
 condicional (true|false)?comandoparatrue:comandoparafalse */
 
-var ternario="fdsf";
+var ternario=true;
 var status=ternario==true?"Entendeu":"Boiou";
 console.log(status);
 

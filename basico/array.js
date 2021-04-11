@@ -1,9 +1,9 @@
 /* 
 Array (vetor)
-- O array eh um objeto de alto nivel parecido com listas
-- O array sem objetos inicia na posicao 0
-- Comporta multiplos tipos de dados no mesmo array
-- Nao possui tamanho e tipo fixos
+- o array eh um objeto de alto nivel parecido com listas
+- o array sem objetos inicia na posicao 0
+- comporta multiplos tipos de dados no mesmo array
+- nao possui tamanho e tipo fixos
 fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
 */
 
