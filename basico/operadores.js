@@ -1,13 +1,13 @@
-/* testando operador com condicional */
+/* variavel recebe valor de condicional true ou false */
 var idade=90;
 var condicional = idade==18;
-console.log(condicional);
+console.log("Valor obtido de uma operacao condicional: "+condicional);
 
 /* operador modulo retorna o resto (do lado esquerdo da chave) da divisao, até o último numero inteiro
 ele calcula, mas o resto pode ser decimal, ja que o ultimo numero calculado foi um inteiro
 ou seja, pode dar decimal o resto, mas ele estende o calculo ate o ultimo numero inteiro */
 var modulo = 0.23984%1.89053480;
-console.log(modulo);
+console.log("Valor de modulo: "+modulo);
 
 /* concatena-se com o sinal de +*/
 var texto = "parte a" + "parte b";
@@ -21,7 +21,7 @@ console.log( [1,2,3] + 4 ) // "1,2,34"
 console.log( {nome:'José'} + 1 ); // “[object Object]1”
 console.log(5 + 20); // 25
 console.log(5 + true); // 6
-console.log(5 + null); // 5
+console.log(5 + null); // 5null
 console.log(true + true); // 2
 console.log(true + null); // 1
 console.log(null + null); // 0
