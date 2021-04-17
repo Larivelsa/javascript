@@ -1,13 +1,15 @@
 /*
 for...of 
+- itera os valores do objeto e nao as propriedades (chaves do objeto)
 - realiza a iteracao sem a necessidade de declarar variavel contadora e expressao
-- especifica para colecoes (com a propriedade [Symbol.iterator]), ao inves de todos os objetos
-- da erro se nao especifica a variavel que recebera a iteracao
+- da erro se nao especifica a variavel que receber a iteracao
+- posterior ao for...in
 
 sintaxe: 
 for (variavel of iteravel) {
 [declaracao]
 } 
+sendo:
 variavel: a cada iteracao, um valor de uma propriedade diferente eh atribuido a variavel.
 iteravel: objeto cujos atributos serao iterados
 
@@ -19,34 +21,34 @@ fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Stateme
 */
 
 /* basico */
-let array = ["a","b","c"];
-for(var dado of array){
-    console.log("Variavel declarada com let: "+dado);
+let array_1 = ["a", "b", "c"];
+for (var dado of array_1) {
+    console.log("Variavel declarada com let: " + dado);
+}
+console.log("Tipo da variavel dado: " + typeof (dado));
+
+for (const dado of array_1) {
+    console.log("Variavel declarada com const: " + dado);
 }
 
-console.log("Tipo da variavel dado: "+typeof(dado));
 
-
-
-for (const dado of array) {
-  console.log("Variavel declarada com const: "+dado);
+let array_2 = ["a", "b", "c"];
+for (let valores of array_1) {
+    console.log("Valores das propriedades (no caso, indice) e nao as propriedades em si do array_2: " + valores);
 }
 
 /* iterando com String */
 let palavra = "heyah";
-for(let letra of palavra){
+for (let letra of palavra) {
     console.log(letra);
 }
 
 /* iterando com colecoes de objetos */
-let vestidos = [{cor:"preto",comprimento:"medio",estilo:"esport chic",ocasiao:"noite"},
-               {cor:"offwhite",comprimento:"longo",estilo:"boho",ocasiao:"dia"},
-               {cor:"verde",comprimento:"longo",estilo:"sereia",ocasiao:"noite"}];
-               
-for(var look_do_dia of vestidos){
-    console.log(" Vestido - cor: "+look_do_dia.cor+", estilo: "+look_do_dia.estilo+", ocasiao: "+look_do_dia.ocasiao);
-
+let colecao = [{ propriedade1: "a1", propriedade2: "b1", propriedade3: "c1" },
+{ propriedade1: "a2", propriedade2: "b2", propriedade3: "c2" }
+];
+for (valor of colecao) {
+    console.log("Valor da propriedade1: " + valor.propriedade1);
+    console.log("Valor da propriedade2: " + valor.propriedade2);
+    console.log("Valor da propriedade3: " + valor.propriedade3);
 }
-
-console.log("Tipo da variavel 'look_do_dia': "+typeof(look_do_dia));
-console.log("Tipo de 'vestido': "+typeof(vestidos));
