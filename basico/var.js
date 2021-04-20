@@ -13,4 +13,3 @@ if(true){
     console.log("Variavel var 'nome' dentro do bloco if: "+nome);
 }
 console.log("Variavel var 'nome' fora do bloco if: "+nome);
-
