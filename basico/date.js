@@ -38,7 +38,7 @@ console.log(hoje.getDay());//dia da semana (dom 0, seg 1, ter 2, qua 3, qui 4, s
 console.log(hoje.getMinutes());
 console.log(hoje.getMilliseconds());
 console.log(hoje.getTime());//representa quantos milissegundos se passaram desde 1970-01-0 00:00:00 ate a data definida - tem a mesma funcao do .valueOf()
-console.log(hoje.getTimezoneOffset());//retorna a diferenca de fuso horario local em relacao ao UTF
+console.log(hoje.getTimezoneOffset());//retorna a diferenca em minutos de fuso horario local em relacao ao UTF
 
 /* getters de conversao de Date() */
 console.log(".toString(): " + hoje.toString());//string com data e tempo
@@ -165,5 +165,26 @@ if (diferencaTime > milissegundosDia * 7) {
 }
 
 console.log(msg);
+
+
+/**Crie um código para verificar se a data atual do sistema é uma sexta-feira 13 
+ * (utilize as variáveis diaSemana e diaMes para isso).
+Caso não seja sexta-feira 13 verifique se é sexta-feira 
+e imprima 'Sextou!!!'.
+Utilize o operador de igualdade estrita que verifica 
+se um valor é igual tanto em tipo quanto em valor. */
+
+const dataAtual = new Date();
+
+
+const diaMes = dataAtual.getDate();
+const diaSemana = dataAtual.getDay();
+
+if ((diaSemana+3) == 5 && diaMes == 13) {
+  console.log('Cuidado! Hoje é sexta-feira 13');
+
+} else if ((diaSemana+3) == 5) {
+  console.log('Sextou!!!');
+}
 
 
