@@ -174,9 +174,6 @@ e imprima 'Sextou!!!'.
 Utilize o operador de igualdade estrita que verifica 
 se um valor é igual tanto em tipo quanto em valor. */
 
-const dataAtual = new Date();
-
-
 const diaMes = dataAtual.getDate();
 const diaSemana = dataAtual.getDay();
 
@@ -184,7 +181,9 @@ if ((diaSemana+3) == 5 && diaMes == 13) {
   console.log('Cuidado! Hoje é sexta-feira 13');
 
 } else if ((diaSemana+3) == 5) {
-  console.log('Sextou!!!');
+  console.log('Sextou!');
 }
 
+const sohoje = new Date();
+console.log(sohoje.getDate()+1);
 
