@@ -54,7 +54,8 @@ console.log(1===true);
 console.log(null===undefined);
 console.log(String==="String");
 
-/* operadores de igualdade/desigualdade, maior, menor, maior igual, menor igual retornam sempre true/false */
+/* operadores de igualdade/desigualdade, maior, menor, maior igual, 
+menor igual retornam sempre true/false e NAO CONVERTEM O VALOR*/
 
 /* operadores logico */
 console.log(true&&false);

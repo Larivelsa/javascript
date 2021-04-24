@@ -1,5 +1,5 @@
 function retorna_mensalidade(){
-    return 50.0;
+    return 50;
 }
 
 let valor_mensalidade = retorna_mensalidade();

@@ -1,9 +1,9 @@
 /**comando de repeticao for
  * sintaxr:
  * for ([inicializacao]; [condicao]; [expressao final])
- * [inicializacao] -> eh opcional, pode ser um expressao ou um variavel, ela tem escopo no for e nao somente no loop
- * [condicao] -> eh opcional, se omitida eh dada como true; enquanto true executa o loop
- * [expressao final] -> eh opcional, acontece so no final da iteracao (repeticao) do loop, geralmente incrementada ou decrementada
+ * [inicializacao] - nao eh obrigatorio-> eh opcional, pode ser um expressao ou um variavel, ela tem escopo no for e nao somente no loop
+ * [condicao] - nao eh obrigatorio -> eh opcional, se omitida eh dada como true; enquanto true executa o loop
+ * [expressao final] - nao eh obrigatorio -> eh opcional, acontece so no final da iteracao (repeticao) do loop, geralmente incrementada ou decrementada
  * fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for
  */
 
