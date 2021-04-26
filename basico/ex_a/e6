@@ -9,9 +9,10 @@ const itensCarrinho = [
     { id: 4, nome: 'Papel toalha', qnt: 1, valor: 2.00 },
 ];
 
-const totalAPagar = itensCarrinho.reduce(function (total, itemCarrinho) {
+const totalAPagar = itensCarrinho.reduce(function (total,itemCarrinho) {
     const valorItem = itemCarrinho.qnt * itemCarrinho.valor;
-    total = total + valorItem;}, 0);
+    return total + valorItem;
+}, 0);
 
 
 console.log(totalAPagar);

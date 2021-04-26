@@ -1,3 +1,4 @@
+
 const alunos = [
   { nome: "José", av1: 10, av2: 5, av3: 7 },
   { nome: "Ana", av1: 1, av2: 10, av3: 10 },

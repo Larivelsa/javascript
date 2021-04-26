@@ -1,0 +1,22 @@
+/**Imprima os meses abreviados (variável 'mesesAbreviados'). 
+ * Crie o array 'mesesAbreviados' que possui a mesma quantidade 
+ * de elementos do array 'meses'. Utilize a função 'abreviar' 
+ * para que os elementos do array 'mesesAbreviados' tenham apenas três letras. */
+
+ const meses = [
+  "Janeiro", "Fevereiro", "Março", "Abril",
+  "Maio", "Junho", "Julho", "Agosto",
+  "Setembro", "Outubro", "Novembro", "Dezembro"
+];
+
+function abreviar (mes) {
+  return mes.substr(0,3)
+};
+
+const mesesAbreviados = meses.map(abreviar);
+
+mesesAbreviados.forEach( mes => {
+  console.log(mes);
+});
+
+  
