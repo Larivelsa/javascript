@@ -28,5 +28,5 @@ const retorna_signo = (signos, data) => {
 
 }
 
-export default retorna_signo;
+module.exports = { retorna_signo }
 
