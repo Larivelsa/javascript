@@ -1,11 +1,11 @@
-#O que é JavaScript?#
+# O que é JavaScript?
 
-JavaScript é uma linguagem de programação amplamente utilizada para adicionar interatividade a páginas web, como animações, validações de formulários e manipulação de elementos em tempo real. 
+JavaScript (JS) é uma linguagem de programação leve e interpretada (ou compilada just-in-time), que oferece funções de primeira classe e é amplamente utilizada para adicionar interatividade às páginas da web. Embora seja mais conhecida nesse contexto, também é empregada em ambientes fora do navegador, como Node.js, Apache CouchDB e Adobe Acrobat.
 
-É interpretada, baseada em protótipos e orientada a objetos, podendo ser executada diretamente nos navegadores. 
+É uma linguagem dinâmica e multiparadigma, o que significa que suporta diferentes estilos de programação, como orientado a objetos, imperativo e declarativo, incluindo a programação funcional. JavaScript é single-threaded, ou seja, executa código em uma única linha de execução, mas pode gerenciar operações assíncronas usando callbacks e promessas. Baseada em protótipos, a linguagem permite a herança de propriedades e métodos entre objetos, formando uma cadeia de protótipos. Além disso, por ser altamente flexível e de fácil integração com outras tecnologias, JavaScript continua sendo uma das linguagens mais populares e fundamentais no desenvolvimento moderno.
 
-Com o advento de ambientes como Node.js, também é usada no desenvolvimento de aplicações de servidor, destacando sua versatilidade no ecossistema de software.
 
-Fontes:  
-- [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
-- [*Eloquent JavaScript*, de Marijn Haverbeke](https://eloquentjavascript.net/).  
+Fontes:
+
+[Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+[*Eloquent JavaScript*, de Marijn Haverbeke](https://eloquentjavascript.net/).  
