@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 150px;
+            text-align: center;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #4a90e2;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Jogador: Meryl</p>
+
+    <script>
+        const paragrafo = document.querySelector('p');
+        paragrafo.addEventListener('click', atualizarNome);
+
+        function atualizarNome() {
+
+            const nome = prompt('Digite o nome do jogador');
+
+            try {
+                if (!nome) {
+                    throw new Error('Nome inválido.');
+                }
+            }
+            catch (erro) {
+                alert(erro.message);
+                paragrafo.textContent = 'Tente novamente!';
+                return;
+            }
+            paragrafo.textContent = 'Jogador: ' + nome;
+
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- Adaptado de https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/What_is_JavaScript -->
